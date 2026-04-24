@@ -14,3 +14,6 @@ Eliminación de filas sin datos mínimos para ser una multa válida (`patente`, 
 
 ## Día 5
 Detección y eliminación de outliers por IQR sobre `velocidad_registrada` y `velocidad_maxima` con la leyenda pedida.
+
+## Día 6
+Columnas `exceso_velocidad_real` (sin tolerancia) y `exceso_velocidad` (con 5% de tolerancia sobre la velocidad máxima).
