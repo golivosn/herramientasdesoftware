@@ -38,3 +38,6 @@ Gráficos de líneas para los excesos filtrados por hora `00:00` (`hour.jpg`) y 
 
 ## Día 13
 Arreglo de `hour.jpg` y `date.jpg`: se excluye el default opuesto en cada filtro y se agrupa `date.jpg` por hora del reloj (0–23) para que el eje X quede legible.
+
+## Día 14
+Reordenamiento del notebook: se reubica el Ejercicio 04 antes del Punto 05, se restaura la clase `FineAnalyzer` que se había perdido por colisión de IDs y se elimina un markdown duplicado de Punto 05.
