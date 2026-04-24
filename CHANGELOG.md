@@ -47,3 +47,6 @@ Punto 06: porcentajes de infracciones con los valores por defecto (`1932-01-01` 
 
 ## Día 16
 Estilo: indentación de todas las celdas de código a 2 espacios y se cortan líneas que excedían 80 caracteres, siguiendo la consigna.
+
+## Día 17
+Ajustes de consigna: `months.jpg` queda ordenado descendente de mayor a menor (con el mayor visualmente arriba) y la columna del ranking de patentes pasa a llamarse `patentes` (plural) como pide el enunciado del Ejercicio 04.
