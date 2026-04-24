@@ -29,3 +29,6 @@ Clase `FineAnalyzer`: encapsula el dataframe limpio y expone rankings, promedios
 
 ## Día 10
 Instanciación del analizador y llamada a cada método en celdas separadas.
+
+## Día 11
+Gráficos de top patentes (`fines.jpg`), porcentaje de infracciones por hora (`hours.jpg`) y cantidad por mes (`months.jpg`) en `data/interim/plots/`.
