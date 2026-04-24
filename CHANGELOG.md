@@ -32,3 +32,6 @@ Instanciación del analizador y llamada a cada método en celdas separadas.
 
 ## Día 11
 Gráficos de top patentes (`fines.jpg`), porcentaje de infracciones por hora (`hours.jpg`) y cantidad por mes (`months.jpg`) en `data/interim/plots/`.
+
+## Día 12
+Gráficos de líneas para los excesos filtrados por hora `00:00` (`hour.jpg`) y por fecha `1932-01-01` (`date.jpg`), con la interpretación documentada en el notebook.
