@@ -35,3 +35,6 @@ Gráficos de top patentes (`fines.jpg`), porcentaje de infracciones por hora (`h
 
 ## Día 12
 Gráficos de líneas para los excesos filtrados por hora `00:00` (`hour.jpg`) y por fecha `1932-01-01` (`date.jpg`), con la interpretación documentada en el notebook.
+
+## Día 13
+Arreglo de `hour.jpg` y `date.jpg`: se excluye el default opuesto en cada filtro y se agrupa `date.jpg` por hora del reloj (0–23) para que el eje X quede legible.
