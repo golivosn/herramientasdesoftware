@@ -26,3 +26,6 @@ Exportación del dataset limpio a `urban_flow/data/interim/speeding_fines.csv`.
 
 ## Día 9
 Clase `FineAnalyzer`: encapsula el dataframe limpio y expone rankings, promedios de exceso y conteo por ubicación.
+
+## Día 10
+Instanciación del analizador y llamada a cada método en celdas separadas.
