@@ -11,3 +11,6 @@ Normalización de fechas, horas, ubicaciones y patentes sobre una copia del data
 
 ## Día 4
 Eliminación de filas sin datos mínimos para ser una multa válida (`patente`, `velocidad_registrada`, `velocidad_maxima`) con la leyenda pedida.
+
+## Día 5
+Detección y eliminación de outliers por IQR sobre `velocidad_registrada` y `velocidad_maxima` con la leyenda pedida.
