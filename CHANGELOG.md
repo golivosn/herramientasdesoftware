@@ -23,3 +23,6 @@ Filtrado de filas sin infracción usando `exceso_velocidad > 0`.
 
 ## Día 8
 Exportación del dataset limpio a `urban_flow/data/interim/speeding_fines.csv`.
+
+## Día 9
+Clase `FineAnalyzer`: encapsula el dataframe limpio y expone rankings, promedios de exceso y conteo por ubicación.
