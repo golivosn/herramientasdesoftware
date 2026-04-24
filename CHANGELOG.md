@@ -17,3 +17,6 @@ Detección y eliminación de outliers por IQR sobre `velocidad_registrada` y `ve
 
 ## Día 6
 Columnas `exceso_velocidad_real` (sin tolerancia) y `exceso_velocidad` (con 5% de tolerancia sobre la velocidad máxima).
+
+## Día 7
+Filtrado de filas sin infracción usando `exceso_velocidad > 0`.
