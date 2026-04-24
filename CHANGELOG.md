@@ -50,3 +50,6 @@ Estilo: indentación de todas las celdas de código a 2 espacios y se cortan lí
 
 ## Día 17
 Ajustes de consigna: `months.jpg` queda ordenado descendente de mayor a menor (con el mayor visualmente arriba) y la columna del ranking de patentes pasa a llamarse `patentes` (plural) como pide el enunciado del Ejercicio 04.
+
+## Día 18
+Punto 07: conclusión del Sprint 1 escrita mediante `%%writefile -a urban_flow/data/Readme.md`, cubriendo calidad de dato, impacto de los defaults de fecha y hora, tendencias por ubicación y recomendación para la migración. Además se completa el return type de `normalizar_patente` para cumplir con el requerimiento de type hints.
