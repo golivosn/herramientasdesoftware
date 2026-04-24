@@ -41,3 +41,6 @@ Arreglo de `hour.jpg` y `date.jpg`: se excluye el default opuesto en cada filtro
 
 ## Día 14
 Reordenamiento del notebook: se reubica el Ejercicio 04 antes del Punto 05, se restaura la clase `FineAnalyzer` que se había perdido por colisión de IDs y se elimina un markdown duplicado de Punto 05.
+
+## Día 15
+Punto 06: porcentajes de infracciones con los valores por defecto (`1932-01-01` y `00:00`) usando la leyenda pedida.
