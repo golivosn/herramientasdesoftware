@@ -44,3 +44,6 @@ Reordenamiento del notebook: se reubica el Ejercicio 04 antes del Punto 05, se r
 
 ## Día 15
 Punto 06: porcentajes de infracciones con los valores por defecto (`1932-01-01` y `00:00`) usando la leyenda pedida.
+
+## Día 16
+Estilo: indentación de todas las celdas de código a 2 espacios y se cortan líneas que excedían 80 caracteres, siguiendo la consigna.
