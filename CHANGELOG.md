@@ -1,55 +1,105 @@
 # CHANGELOG
 
-## Día 1
-Estructura de carpetas, rama `Sprint_1`, imports, variables globales y `desactivar_git_push`.
+Trabajo Practico Integrador — Urban Flow.
 
-## Día 2
-Descarga del dataset a `data/raw/` e inspección inicial (`head`, `dtypes`, nulos).
+Integrantes: Gabriel Olivo, Tobias Tofalo, Luciano Cabral.
 
-## Día 3
-Normalización de fechas, horas, ubicaciones y patentes sobre una copia del dataframe.
+---
 
-## Día 4
-Eliminación de filas sin datos mínimos para ser una multa válida (`patente`, `velocidad_registrada`, `velocidad_maxima`) con la leyenda pedida.
+## Configuracion inicial
 
-## Día 5
-Detección y eliminación de outliers por IQR sobre `velocidad_registrada` y `velocidad_maxima` con la leyenda pedida.
+- Variables globales del notebook: `desactivar_git_push`, `nombre_rama`,
+  `url_repositorio_https` y rutas del proyecto.
+- Imports en una sola celda antes del Ejercicio 01: `pandas`, `matplotlib`,
+  `pathlib`, `re`, `subprocess`, `unicodedata`, `urlretrieve`, `datetime`.
+- Funcion `ejecutar_git` para correr los comandos de git desde el notebook
+  y `push_si_corresponde` que respeta el flag `desactivar_git_push`.
 
-## Día 6
-Columnas `exceso_velocidad_real` (sin tolerancia) y `exceso_velocidad` (con 5% de tolerancia sobre la velocidad máxima).
+---
 
-## Día 7
-Filtrado de filas sin infracción usando `exceso_velocidad > 0`.
+## Dia 1 — Ejercicio 01
 
-## Día 8
-Exportación del dataset limpio a `urban_flow/data/interim/speeding_fines.csv`.
+- Clonado del repositorio en Colab cuando corresponde y `cd` al
+  directorio del proyecto para que las rutas resuelvan desde la raiz.
+- Creacion de la rama `Sprint_1` (o checkout si ya existia).
+- Estructura de carpetas pedida: `urban_flow/data/raw`,
+  `urban_flow/data/interim`, `urban_flow/data/interim/plots` y
+  `urban_flow/data/processed`.
+- Verificacion del estado del repo con `git status`.
 
-## Día 9
-Clase `FineAnalyzer`: encapsula el dataframe limpio y expone rankings, promedios de exceso y conteo por ubicación.
+---
 
-## Día 10
-Instanciación del analizador y llamada a cada método en celdas separadas.
+## Dia 2 — Ejercicio 02
 
-## Día 11
-Gráficos de top patentes (`fines.jpg`), porcentaje de infracciones por hora (`hours.jpg`) y cantidad por mes (`months.jpg`) en `data/interim/plots/`.
+- Descarga del dataset original desde el repositorio de la catedra a
+  `urban_flow/data/raw/speeding_fines.csv` con `urlretrieve`.
+- Inspeccion inicial: `head` de las 5 primeras filas, `dtypes` por
+  columna y conteo de nulos con `isna().sum()`.
 
-## Día 12
-Gráficos de líneas para los excesos filtrados por hora `00:00` (`hour.jpg`) y por fecha `1932-01-01` (`date.jpg`), con la interpretación documentada en el notebook.
+---
 
-## Día 13
-Arreglo de `hour.jpg` y `date.jpg`: se excluye el default opuesto en cada filtro y se agrupa `date.jpg` por hora del reloj (0–23) para que el eje X quede legible.
+## Dia 3 — Ejercicio 03
 
-## Día 14
-Reordenamiento del notebook: se reubica el Ejercicio 04 antes del Punto 05, se restaura la clase `FineAnalyzer` que se había perdido por colisión de IDs y se elimina un markdown duplicado de Punto 05.
+- Normalizacion de `fecha` al formato `YYYY-MM-DD`; las invalidas se
+  reemplazan por `1932-01-01`.
+- Normalizacion de `hora` a 24 hs; las invalidas quedan en `00:00`.
+- Normalizacion de `ubicacion`: mayusculas, sin tildes y sin caracteres
+  especiales.
+- Normalizacion de `patente`: mayusculas, sin separadores y `pd.NA` si
+  no queda nada util.
+- Eliminacion de filas sin `patente`, `velocidad_registrada` o
+  `velocidad_maxima` con la leyenda pedida.
+- Deteccion y eliminacion de outliers por IQR sobre `velocidad_registrada`
+  y `velocidad_maxima`.
+- Calculo de `exceso_velocidad_real` (sin tolerancia) y `exceso_velocidad`
+  (con un 5% de tolerancia sobre la velocidad maxima).
+- Filtrado de filas sin infraccion (`exceso_velocidad <= 0`).
+- Exportacion del datset depurado a
+  `urban_flow/data/interim/speeding_fines.csv`.
 
-## Día 15
-Punto 06: porcentajes de infracciones con los valores por defecto (`1932-01-01` y `00:00`) usando la leyenda pedida.
+---
 
-## Día 16
-Estilo: indentación de todas las celdas de código a 2 espacios y se cortan líneas que excedían 80 caracteres, siguiendo la consigna.
+## Dia 4 — Ejercicio 04
 
-## Día 17
-Ajustes de consigna: `months.jpg` queda ordenado descendente de mayor a menor (con el mayor visualmente arriba) y la columna del ranking de patentes pasa a llamarse `patentes` (plural) como pide el enunciado del Ejercicio 04.
+- Clase `FineAnalyzer` que recibe el dataframe limpio y lo encapsula.
+- Metodo interno `_ranking` reutilizado por los rankings.
+- Metodos publicos:
+  - `top_patentes_multadas` — top 5 patentes.
+  - `top_horarios_multas` — top 5 horarios.
+  - `exceso_velocidad_promedio` — promedio con tolerancia.
+  - `exceso_velocidad_real_promedio` — promedio sin tolerancia.
+  - `multas_por_ubicacion` — conteo agrupado por ubicacion.
+- Instanciacion del objeto y llamada a cada metodo en celdas separadas.
 
-## Día 18
-Punto 07: conclusión del Sprint 1 escrita mediante `%%writefile -a urban_flow/data/Readme.md`, cubriendo calidad de dato, impacto de los defaults de fecha y hora, tendencias por ubicación y recomendación para la migración. Además se completa el return type de `normalizar_patente` para cumplir con el requerimiento de type hints.
+---
+
+## Dia 5 — Punto 05
+
+Cinco graficos exportados como `.jpg` en `urban_flow/data/interim/plots/`:
+
+- `fines.jpg` — barras con el top 10 de patentes mas reincidentes.
+- `hours.jpg` — torta con el porcentaje de infracciones por hora.
+- `months.jpg` — barras horizontales con la cantidad de infracciones por
+  mes, ordenadas de mayor a menor.
+- `hour.jpg` — linea del exceso promedio para multas con `hora == 00:00`,
+  excluyendo las que ademas tienen la fecha por defecto.
+- `date.jpg` — linea del exceso promedio para multas con
+  `fecha == 1932-01-01`, agregadas por hora del reloj.
+
+---
+
+## Dia 6 — Punto 06
+
+- Porcentaje de infracciones que quedaron con la fecha por defecto
+  `1932-01-01`.
+- Porcentaje de infracciones que quedaron con la hora por defecto
+  `00:00`.
+
+---
+
+## Dia 7 — Punto 07
+
+- Conclusion del Sprint 1 escrita en `urban_flow/data/Readme.md` con
+  `%%writefile -a`: calidad de los datos, impacto de los defaluts de
+  fecha y hora, distibucion de las multas validas y recomendacion para
+  la migracion al sistema nuevo.
