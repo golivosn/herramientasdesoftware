@@ -103,3 +103,9 @@ Cinco graficos exportados como `.jpg` en `urban_flow/data/interim/plots/`:
   `%%writefile -a`: calidad de los datos, impacto de los defaluts de
   fecha y hora, distibucion de las multas validas y recomendacion para
   la migracion al sistema nuevo.
+
+## Sprint 2 - Ejercicio 01 (2026-05-21)
+
+- Creación de la rama `Sprint_2` a partir de `Sprint_1`.
+- Descarga y extracción del dataset de imágenes en `urban_flow/data/raw/imgs`.
+- Actualización del README con el contexto del Sprint 2.
