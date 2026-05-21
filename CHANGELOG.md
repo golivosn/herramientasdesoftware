@@ -109,3 +109,24 @@ Cinco graficos exportados como `.jpg` en `urban_flow/data/interim/plots/`:
 - Creación de la rama `Sprint_2` a partir de `Sprint_1`.
 - Descarga y extracción del dataset de imágenes en `urban_flow/data/raw/imgs`.
 - Actualización del README con el contexto del Sprint 2.
+
+## Sprint 2 - Ejercicio 02 (2026-05-21)
+
+- Listado de imágenes con nombre y tamaño en KB.
+- Agrupación en plates y completes con resolución promedio.
+- Guardado de group_images.json en interim.
+- Función mostrar_imagenes para visualización aleatoria.
+
+## Sprint 2 - Ejercicio 02 (2026-05-21)
+
+- Listado de imágenes con nombre y tamaño en KB.
+- Agrupación en plates y completes con resolución promedio.
+- Guardado de group_images.json en interim.
+- Función mostrar_imagenes para visualización aleatoria.
+
+## Sprint 2 - Ejercicio 02 (2026-05-21)
+
+- Listado de imágenes con nombre y tamaño en KB.
+- Agrupación en plates y completes con resolución promedio.
+- Guardado de group_images.json en interim.
+- Función mostrar_imagenes para visualización aleatoria.
