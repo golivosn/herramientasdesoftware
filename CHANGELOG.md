@@ -130,3 +130,7 @@ Cinco graficos exportados como `.jpg` en `urban_flow/data/interim/plots/`:
 - Agrupación en plates y completes con resolución promedio.
 - Guardado de group_images.json en interim.
 - Función mostrar_imagenes para visualización aleatoria.
+
+## Sprint 3 - ejercicio 1 - rama sprint_3 y verificacion de datasets (2026-06-14)
+
+- Rama Sprint_3 a partir de Sprint_2, chequeo de datasets.
