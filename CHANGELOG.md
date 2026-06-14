@@ -150,3 +150,7 @@ Cinco graficos exportados como `.jpg` en `urban_flow/data/interim/plots/`:
 ## Sprint 3 - ejercicio 5 - modelo relacional sqlalchemy (2026-06-14)
 
 - Tablas con clave primaria, relaciones y __repr__.
+
+## Sprint 3 - ejercicio 6 - base transito creada y poblada (2026-06-14)
+
+- Creacion, poblado y validacion de los registros insertados.
