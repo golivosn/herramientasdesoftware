@@ -1,28 +1,25 @@
 # Urban Flow
 
-Sprint 1.
+Sprint 3.
 
 ## Objetivo
 
-Limpiar y analizar un dataset historico de multas por exceso de velocidad
-proveniente de un sistema heredado, para poder migrarlo al sistema nuevo
-sin inconsistencias.
+Migrar la información procesada a una base de datos relacional con el ORM de
+SQLAlchemy, versionar los archivos binarios con un remote de DVC simulado y
+habilitar la búsqueda de patentes por imagen con una base vectorial
+(ChromaDB + OpenCLIP).
 
-## Contexto
+## Introducción y contexto
 
-La localidad de Vaalserberg (Belgica) registra infracciones con radares
-urbanos. Los datos viejos vienen con errores de formato y valores faltantes,
-asi que antes de cualquier analisis hay que normalizarlos y depurarlos.
+El sistema creció en volumen y complejidad, así que ya no alcanza con los
+archivos CSV. En este sprint sumamos persistencia en la base relacional
+transito, control de versiones de los datos binarios y una base vectorial
+que permite recuperar el vehículo a partir de una imagen de su patente.
 
 ## Estructura
 
-```
-urban_flow/
-  data/
-    raw/        # dataset original sin procesar
-    interim/    # dataset procesado + plots/
-    processed/  # dataset final para exportar
-```
+- urban_flow/data/raw: dataset original e imágenes.
+- urban_flow/data/interim: dataset intermedio.
+- urban_flow/data/processed: csv final, base transito y chroma.
 
-El trabajo se realiza sobre la rama `Sprint_1`. La variable
-`desactivar_git_push` controla si el notebook intenta hacer push al remoto.
+La variable desactivar_git_push controla si el notebook hace push al remoto.

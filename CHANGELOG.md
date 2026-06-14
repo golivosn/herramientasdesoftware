@@ -166,3 +166,7 @@ Cinco graficos exportados como `.jpg` en `urban_flow/data/interim/plots/`:
 ## Sprint 3 - ejercicio 9 - buscar_patente_imagen (2026-06-14)
 
 - Busqueda del vehiculo por similitud de imagen.
+
+## Sprint 3 - ejercicio 10 - conclusion con writefile (2026-06-14)
+
+- Conclusion del sprint y actualizacion de README.
