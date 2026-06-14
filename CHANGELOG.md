@@ -142,3 +142,7 @@ Cinco graficos exportados como `.jpg` en `urban_flow/data/interim/plots/`:
 ## Sprint 3 - ejercicio 3 - modelo logico (2026-06-14)
 
 - Dataclasses de Vehiculo, Radar, Multa y Evidencia.
+
+## Sprint 3 - ejercicio 4 - procesar_fila_csv (2026-06-14)
+
+- Funcion que mapea una fila del CSV al modelo logico.
