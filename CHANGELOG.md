@@ -146,3 +146,7 @@ Cinco graficos exportados como `.jpg` en `urban_flow/data/interim/plots/`:
 ## Sprint 3 - ejercicio 4 - procesar_fila_csv (2026-06-14)
 
 - Funcion que mapea una fila del CSV al modelo logico.
+
+## Sprint 3 - ejercicio 5 - modelo relacional sqlalchemy (2026-06-14)
+
+- Tablas con clave primaria, relaciones y __repr__.
