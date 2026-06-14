@@ -154,3 +154,7 @@ Cinco graficos exportados como `.jpg` en `urban_flow/data/interim/plots/`:
 ## Sprint 3 - ejercicio 6 - base transito creada y poblada (2026-06-14)
 
 - Creacion, poblado y validacion de los registros insertados.
+
+## Sprint 3 - ejercicio 7 - consultas (2026-06-14)
+
+- Consultas de patentes, evidencias, radares y reincidentes.
