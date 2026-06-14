@@ -138,3 +138,7 @@ Cinco graficos exportados como `.jpg` en `urban_flow/data/interim/plots/`:
 ## Sprint 3 - ejercicio 2 - remote_dvc y migracion de imagenes (2026-06-14)
 
 - Carpeta remote_dvc y migracion de imagenes fuera de git.
+
+## Sprint 3 - ejercicio 3 - modelo logico (2026-06-14)
+
+- Dataclasses de Vehiculo, Radar, Multa y Evidencia.
