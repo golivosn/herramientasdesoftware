@@ -162,3 +162,7 @@ Cinco graficos exportados como `.jpg` en `urban_flow/data/interim/plots/`:
 ## Sprint 3 - ejercicio 8 - base vectorial de patentes (2026-06-14)
 
 - Base patente_vectorial con embeddings OpenCLIP de las patentes.
+
+## Sprint 3 - ejercicio 9 - buscar_patente_imagen (2026-06-14)
+
+- Busqueda del vehiculo por similitud de imagen.
