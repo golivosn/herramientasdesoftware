@@ -134,3 +134,7 @@ Cinco graficos exportados como `.jpg` en `urban_flow/data/interim/plots/`:
 ## Sprint 3 - ejercicio 1 - rama sprint_3 y verificacion de datasets (2026-06-14)
 
 - Rama Sprint_3 a partir de Sprint_2, chequeo de datasets.
+
+## Sprint 3 - ejercicio 2 - remote_dvc y migracion de imagenes (2026-06-14)
+
+- Carpeta remote_dvc y migracion de imagenes fuera de git.
